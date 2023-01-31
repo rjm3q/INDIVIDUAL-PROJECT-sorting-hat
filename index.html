@@ -11,20 +11,52 @@
 <body>
  <h1 class ="page-header"> American Sorting Hat</h1>
  <button class="accordion">The American sorting hat story</button>
- <div class="panel"><p>
-The schoolog Iivantry was founded in 1627, in order to escape teh tyranical rule
+ <div class="panel">
+<p>The schoolog Iivantry was founded in 1627, in order to escape teh tyranical rule
 of the puritans by use of magic. The orignal sorting hat resembled a capotain hat,
 however the personality of this magical item became too old fashioned for the school's 
 staff to manage as it spewed horrible demeaning words at the little witches and wizards. Thus,
 the headmaster of Iivantry at the time, David Crockett, ibued his famous coonskin cap with the
-ability to sort new students!   
- </p></div>
+ability to sort new students!</p>
+</div>
  <div class="button" id="butt-con">
   <button class="fitler-butt" id="start">Click here to begin sorting</button>
   <button class="filter-butt" id="sort">Sort me</button>
  </div>
 <form>
-  <div class="form-floating mb-3"></div>
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="name" placeholder="Name" required>
+    <label for="floatingInput">Name (bonus points for a witch/wizard name)</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="reset" class="form-control" id="name" placeholder="Name" required>
+    <label for="floatingInput">Name (bonus points for a witch/wizard name)</label>
+  </div>
+  <div>
+    <p>Please select what you would most likely murder:</p>
+  <input type="radio" id="thero" name="av_language" value="HTML">
+  <label for="thero">Children chosen by fate</label><br>
+  <input type="radio" id="ghost" name="fav_language" value="CSS">
+  <label for="ghost"></label>Beings of unfathomable horror<br>
+  <input type="radio" id="Wizards/Witches" name="fav_language" value="JavaScript">
+  <label for="W">Puppy killing wizards/witches</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="checkbox" class="form-control" id="yn" placeholder="Yay or Nay">
+    <label for="floatingInput">Are you brave enough to speak the forbidden words?</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="range" class="form-control" id="good-evil" placeholder="rate you level of goodness or eveilhood" required>
+    <label for="floatingInput">Glinda to Voldemort</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="date" class="form-control" id="name" placeholder="Name" required>
+    <label for="floatingInput">Name (bonus points for a witch/wizard name)</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="submit" class="form-control" id="submit" placeholder="Sort me now" required>
+    <label for="floatingInput">You wont know until you press it...</label>
+  </div>
 </form>
 
 
