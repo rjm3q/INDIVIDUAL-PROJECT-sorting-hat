@@ -1,3 +1,21 @@
+//this func makes the form disappear
+function BerginSort(){
+  const SortHat = document.getElementById('WHOdini');
+  //gets current dispaly setting
+  var displaySetting = SortHat.style.display;
+  //grab the button to change text depending on state
+  var buttText = document.getElementById('start');
+  //if statment that toogles form
+  if (displaySetting == 'block'){
+    SortHat.style.display = 'none';
+    buttText.innerHTML = 'Click here to sort';
+  }
+  else{
+    SortHat.style.display = 'block';
+    buttText.innerHTML='Changed your mind muggle?'
+  }
+};
+
 //makes the accordion...uh..accord
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -33,4 +51,6 @@ const domcards = (array) => {
     </div>
   </div>`
   }
-}
+  whizTote(".whizTote", domString)
+};
+domcards(studs)

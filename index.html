@@ -20,26 +20,29 @@ the headmaster of Ilvermorny at the time, David Crockett, imbued his famous coon
 ability to sort new students!</p>
 </div>
  <div class="button" id="butt-con">
-  <button class="fitler-butt" id="start">Click here to begin sorting</button>
+  <button onclick="BeginSort()" class="fitler-butt" id="start">Click here to begin sorting</button>
   <button class="filter-butt" id="sort">Sort me</button>
+  <button class="filter-butt" id="delete">Delete me</button>
+  <button class="filter-butt" id="expel">Expel me</button>
+
  </div>
-<form>
+<form class="d-ink" id="WHOdini">
   <div class="form-floating mb-3">
     <input type="text" class="form-control" id="name" placeholder="Name" required>
     <label for="floatingInput">Name (bonus points for a witch/wizard name)</label>
   </div>
   <div class="form-floating mb-3">
     <input type="reset" class="form-control" id="name" placeholder="Name" required>
-    <label for="floatingInput">Name (bonus points for a witch/wizard name)</label>
+    <label for="floatingInput">Cast Reverte</label>
   </div>
   <div>
     <p>Please select what you would most likely murder:</p>
-  <input type="radio" id="thero" name="av_language" value="HTML">
+  <input type="radio" id="thero" name="murderWhom"" value="thero">
   <label for="thero">Children chosen by fate</label><br>
-  <input type="radio" id="ghost" name="fav_language" value="CSS">
-  <label for="ghost"></label>Beings of unfathomable horror<br>
-  <input type="radio" id="Wizards/Witches" name="fav_language" value="JavaScript">
-  <label for="W">Puppy killing wizards/witches</label>
+  <input type="radio" id="ghost" name="murderWhom"" value="ghost">
+  <label for="ghost">Beings of unfathomable horror</label><br>
+  <input type="radio" id="Wizards/Witches" name="murderWhom" value="DrOz">
+  <label for="DrOz">Puppy killing wizards/witches</label>
   </div>
   <div class="form-floating mb-3">
     <input type="checkbox" class="form-control" id="yn" placeholder="Yay or Nay">
@@ -50,7 +53,7 @@ ability to sort new students!</p>
     <label for="floatingInput">Glinda to Voldemort</label>
   </div>
   <div class="form-floating mb-3">
-    <input type="date" class="form-control" id="name" placeholder="Name" required>
+    <input type="date" class="form-control" id="bday" required>
     <label for="floatingInput">Name (bonus points for a witch/wizard name)</label>
   </div>
   <div class="form-floating mb-3">
@@ -58,7 +61,7 @@ ability to sort new students!</p>
     <label for="floatingInput">You wont know until you press it...</label>
   </div>
 </form>
-
+<div class="whizTote"></div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
