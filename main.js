@@ -1,10 +1,12 @@
 //starting over becuase i suck
+// .class-name or #id-name
 //dom rendering
 const domRender = (divID, htmlPage) =>{
   const choseDiv = document.querySelector(divID);
   choseDiv.inneraHTML = htmlPage;
 };
 
+//make the sorting hat, now with non transphobe baskstory!!
 const skooncin = () =>{
   let domString ="";
   domString= `<div class="SortHat-card" id="SkoonCap">
@@ -18,4 +20,51 @@ the headmaster of Ilvermorny at the time, David Crockett, imbued his famous coon
 ability to sort new students!"</p>
   </div>
   </div>`
-}
+};
+
+//gotta see the hat
+const hatPic = () =>{
+
+};
+
+//build students cards
+const hausbutts = () => {
+
+};
+
+//american house randomizer
+const HausofCards = (array, divID)=>{
+
+};
+
+//jerk patrol expulsion pile
+const jerkpel = (array) =>{
+
+};
+
+//filter houses
+const hausFilter = () =>{
+
+};
+
+//start the sorting
+const SortMe = () =>{
+
+};
+
+//good ol math. whatever
+const hausRandomizer = () => {
+  const hauser =["Horned Serpent", "Wampus","Thunderbird","Pukwudgie"]
+};
+
+//Expel the naughty whiz
+const Expel = () =>{
+
+};
+
+
+//makes everything work
+function SortWhiz(){
+
+};
+SortWhiz();
