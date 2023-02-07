@@ -3,8 +3,13 @@
 //dom rendering
 const domRender = (divID, htmlPage) =>{
   const choseDiv = document.querySelector(divID);
-  choseDiv.inneraHTML = htmlPage;
+  choseDiv.innerHTML = htmlPage;
 };
+
+//blank arrays for new students and jerks later
+const studArray =[]
+
+const jerkArray =[]
 
 //make the sorting hat, now with non transphobe baskstory!!
 // const skooncin = () =>{
@@ -21,7 +26,7 @@ const domRender = (divID, htmlPage) =>{
 // <a href="#" id="haus-picker" class="btn btn-primary">Pick a Yankee House</a>
 //   </div>
 //   </div>`
-// domRender()
+domRender()
 // };
 
 //gotta see the hat
@@ -33,13 +38,17 @@ domString =`<div id="welcome-card" class="card-welcomeToIlvermorny">
 <P class=""card-desc">"You've been selected to attend the finest school of Whiccraft & Wizardy this side of the Mississippi"</P>
 <a href="#" id="haus-picker" class="btn btn-primary">Pick a Yankee House</a>
 </div>
-</div>`
+</div>`;
+domRender("#hat-card",domString)
 };
 
 //build the form
 const studForm = () =>{
   let domString="";
-  domString= ``
+  domString= `<form class="input-group mb-3" id="stud-form">
+  <input type="text" id="stud-name" class="form-control" placeholder="Please share your Witch/Wizard name" required />
+  <button class="btn studbutt-secondary" type="submit" value="submit" id="findHouse-btn">Find Your House</button>
+  </form>`
   domRender("#studForm", domString)
 }
 
@@ -54,8 +63,8 @@ const hausbutts = () => {
   domRender("#hausbutts",domString)
 };
 
-//american house randomizer
-const hausort = (array, divID)=>{
+//american house render-o-matic
+const studHausCard = (array, divID) => {
   let domString =``;
   for (let i of array){
     const hsHaus = i.haus === "Horned Serpent";
@@ -106,3 +115,4 @@ function SortWhiz(){
 
 };
 SortWhiz();
+hatCard();
